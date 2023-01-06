@@ -71,6 +71,7 @@ build CMakeFiles/SudokuSolver.dir/SudokuGrid.cpp.obj: CXX_COMPILER__SudokuSolver
 
 build SudokuSolver.exe: CXX_EXECUTABLE_LINKER__SudokuSolver_Debug CMakeFiles/SudokuSolver.dir/main.cpp.obj CMakeFiles/SudokuSolver.dir/SudokuGrid.cpp.obj
   FLAGS = -g
+  LINK_FLAGS = -Wl,--stack,16777216
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SudokuSolver.dir
   POST_BUILD = cd .

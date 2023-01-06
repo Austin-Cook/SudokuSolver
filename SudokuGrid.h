@@ -9,12 +9,14 @@
 
 class SudokuGrid {
 private:
-	int n = 9;
 	int grid[9][9];
 public:
 	SudokuGrid();
 	std::string toString();
 	void insertValue(int row, int col, int value);
+	void solveGrid();
+	bool solveGridHelper(int row, int col, int valueToCheck);
+	bool validateValid(int row, int col, int valueToCheck);
 };
 
 
